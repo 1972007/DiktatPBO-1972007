@@ -35,7 +35,7 @@ public class JurusanDao implements DaoService<Jurusan> {
     @Override
     public int addData(Jurusan jurusan) throws SQLException, ClassNotFoundException {
         int result = 0;
-        String query = "INSERT INTO jdbcdemodb(namaJurusan) VALUES(?)";
+        String query = "INSERT INTO jurusan(namaJurusan) VALUES(?)";
         try (Connection connection = MySQLConnection.createConnection()) {
             try (PreparedStatement ps = connection.prepareStatement(query)) {
                 ps.setString(1, jurusan.getNamaJurusan());

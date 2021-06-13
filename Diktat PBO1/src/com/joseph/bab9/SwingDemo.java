@@ -33,8 +33,6 @@ public class SwingDemo {
     private  ButtonGroup buttonGroup;
     public SwingDemo() {
         buttonGroup = new ButtonGroup();
-        lakiLakiRadioButton.setActionCommand("Laki-laki");
-        perempuanRadioButton.setActionCommand("Perempuan");
         buttonGroup.add(lakiLakiRadioButton);
         buttonGroup.add(perempuanRadioButton);
 
